@@ -1,0 +1,112 @@
+/* Styles to menu */
+.header__menu {
+    grid-template-columns: repeat(3,10%) auto repeat(2,15%);
+}
+
+/* Styles to hero */
+.hero__title {
+    font-size: 5rem;
+}
+
+.hero__copyOne {
+    font-size: 1.6rem;
+}
+
+.hero__banner {
+    width: 40%;
+}
+
+.hero__CTA {
+    width: 50%;
+}
+
+.hero__copyOne {
+    font-size: 1.6rem;
+}
+
+/* Styles to input form */
+.form {
+    min-height: 5rem;
+}
+
+/* Styles to Features section */
+
+.status {
+    padding: 7% 0;
+}
+
+.features {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 1rem 1rem;
+    grid-template-areas: "title  title  title"
+                         "copie copie copie"
+                         "card1 card2  card3";
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 3rem;
+}
+
+
+.features__card {
+    margin-top: 6rem;
+    padding: 2rem 2rem;
+    /* justify-content: center; */
+}
+
+
+
+.hero__title--feat {
+    font-size: 2.4rem;
+    grid-area: title;    
+}
+
+.hero__copyOne--feat {
+    font-size: 1.4rem;
+    grid-area: copie;
+    margin: 0;
+    width: 70%;
+}
+
+.features > div:first-of-type {
+    grid-area: card1;
+}
+
+.features .features__card:nth-of-type(2) {
+    transform: translateY(10%);
+    grid-area: card2;
+}
+
+.features .features__card:nth-of-type(3) {
+    transform: translateY(20%);
+    grid-area: card3;
+}
+
+
+.features__card:not(.features__card--last)::after {
+    top: 40%;
+    right: -11%;
+    height: 5.5rem;
+    transform: rotate(90deg);
+}
+
+.icon-feature {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+}
+
+.title-card {
+    align-self: flex-start;
+    font-size: 1.6rem;
+}
+
+.copy-card {
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+/* Styles to last CTA */
+
